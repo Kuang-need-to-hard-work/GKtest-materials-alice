@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大作文素材积累 - 导航版</title>
+    <style>
+        body { margin: 0; font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background: #f4f6f9; }
+        .container { display: flex; height: 100vh; }
+        .sidebar { width: 300px; background: #fff; padding: 20px; box-shadow: 2px 0 10px rgba(0,0,0,0.1); overflow-y: auto; z-index: 10; }
+        .main-content { flex: 1; position: relative; }
+        h2 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; font-size: 1.2rem; }
+        .nav-link { display: block; padding: 10px; margin: 5px 0; background: #eef2f7; color: #2980b9; text-decoration: none; border-radius: 5px; transition: all 0.3s; font-weight: bold; cursor: pointer; }
+        .nav-link:hover { background: #3498db; color: white; transform: translateX(5px); }
+        .nav-link.active { background: #3498db; color: white; }
+        .section-content { display: none; padding: 20px; animation: fadeIn 0.5s; }
+        .section-content.active { display: block; }
+        .card { background: white; padding: 15px; margin-bottom: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); border-left: 4px solid #3498db; }
+        .card h3 { margin-top: 0; color: #2c3e50; font-size: 1rem; }
+        .card p { font-size: 0.9rem; color: #555; line-height: 1.6; margin-bottom: 5px; }
+        .highlight { color: #e74c3c; font-weight: bold; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        .source-tag { display: inline-block; background-color: #e8f6f3; color: #16a085; font-size: 0.75em; padding: 2px 8px; border-radius: 4px; margin-left: 10px; font-weight: bold; }
+        .topic-tag { font-size:0.6em; background:#3498db; color:white; padding:4px 10px; border-radius:12px; margin-left:10px; }
+        .topic-tag.green { background:#27ae60; }
+        .topic-tag.orange { background:#d35400; }
+        .topic-tag.red { background:#e74c3c; }
+        .home-banner { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; border-radius: 10px; margin-bottom: 20px; text-align: center; }
+        .home-banner h2 { color: white; border-bottom: none; font-size: 1.8rem; margin-bottom: 10px; }
+        .home-banner p { font-size: 1rem; opacity: 0.9; }
+        @media (max-width: 768px) { .container { flex-direction: column; } .sidebar { width: 100%; height: auto; box-sizing: border-box; } .main-content { height: 60vh; } }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="sidebar">
+        <h2>📑 目录导航</h2>
+        <a class="nav-link active" onclick="showSection('home', this)">🏠 首页：十四五成就总结及2026政府工作报告摘要</a>
+        <a class="nav-link" onclick="showSection('topic1', this)">话题一：未成年人网络治理 <span class="topic-tag">社会热点</span></a>
+        <a class="nav-link" onclick="showSection('topic2', this)">话题二：乡村振兴 <span class="topic-tag green">国家战略</span></a>
+        <a class="nav-link" onclick="showSection('topic3', this)">话题三：规划对比与实现目标 <span class="topic-tag orange">核心逻辑</span></a>
+        <a class="nav-link" onclick="showSection('topic4', this)">话题四：词语解释 <span class="topic-tag">基础概念</span></a>
+        <a class="nav-link" onclick="showSection('topic5', this)">话题五：2026 两会专题 <span class="topic-tag red">时政热点</span></a>
+        <a class="nav-link" onclick="showSection('topic6', this)">话题六：树立正确的政绩观 <span class="topic-tag orange">党性修养</span></a>
+        
+        <div style="margin-top: 30px; font-size: 0.8rem; color: #7f8c8d;">
+            <p>素材来源：半月谈、新华社等<br>更新时间：2026 年 3 月</p>
+        </div>
+    </div>
+
+    <div class="main-content" style="padding: 40px; overflow-y: auto; height: 100vh; box-sizing: border-box;">
+        
+        <div id="home" class="section-content active">
+            <div class="home-banner">
+                <h2>🌟 习近平时代十四五成就总结</h2>
+                <p>基于《江山壮阔万象新》文章精神，从四个维度总结这一极不平凡的五年</p>
+            </div>
+            
+            <div class="card" style="border-left-color: #e74c3c;">
+                <h3>1. 思想引领：新质生产力与高质量发展</h3>
+                <p>• <strong>理论突破</strong>：深刻回答"什么是新质生产力、如何发展新质生产力"，将其作为高质量发展的内在要求。</p>
+                <p>• <strong>实践路径</strong>：坚持创新核心地位，推动质量变革、效率变革、动力变革，走出高质量发展万千气象。</p>
+                <p>• <strong>成效</strong>："新"的脚步更坚实，"绿"的底色更鲜明，"协"的合唱更响亮。</p>
+            </div>
+
+            <div class="card" style="border-left-color: #e74c3c;">
+                <h3>2. 人民至上：一切工作为了幸福</h3>
+                <p>• <strong>核心理念</strong>："全面建设社会主义现代化，一个民族也不能落下"、"城市不仅要有高度，更要有温度"。</p>
+                <p>• <strong>实际行动</strong>：从脱贫攻坚转向乡村全面振兴，兜底必须固若金汤；有效应对疫情、洪水、地震（如定日县重建），守住民生底线。</p>
+                <p>• <strong>人口战略</strong>：推动人口高质量发展，建立健全生育支持政策，实施积极应对老龄化国家战略。</p>
+            </div>
+
+            <div class="card" style="border-left-color: #e74c3c;">
+                <h3>3. 战略定力：运筹帷幄与沉着应变</h3>
+                <p>• <strong>宏观调控</strong>：面对疫情冲击和外部打压，果断部署一揽子增量政策（如 2024 年 9 月、2025 年 4 月政治局会议）。</p>
+                <p>• <strong>格局构建</strong>：加快构建新发展格局，内需对增长平均贡献率超<span class="highlight">86%</span>，在开放中赢得主动。</p>
+                <p>• <strong>制度优势</strong>：充分发挥集中力量办大事优势，有效统筹发展与安全。</p>
+            </div>
+
+            <div class="card" style="border-left-color: #e74c3c;">
+                <h3>4. 全球担当：汇聚应对挑战的力量</h3>
+                <p>• <strong>倡议引领</strong>：提出全球发展、安全、文明、治理四大倡议。</p>
+                <p>• <strong>开放格局</strong>：高标准建设海南自贸港（全岛封关），共建"一带一路"高质量发展。</p>
+                <p>• <strong>历史定位</strong>：续写全面建设社会主义现代化国家新的历史，迎来从站起来、富起来到强起来的跨越。</p>
+            </div>
+
+            <div class="home-banner" style="margin-top: 30px; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                <h2>📊 2026 政府工作报告摘要</h2>
+                <p>国务院总理李强 2026 年 3 月 5 日在第十四届全国人民代表大会第四次会议上</p>
+            </div>
+
+            <div class="card" style="border-left-color: #27ae60;">
+                <h3>📌 2025 年工作回顾：很不平凡的一年</h3>
+                <p>• <strong>总体评价</strong>：面对国内外形势深刻复杂变化，全年经济社会发展主要目标任务顺利完成，"十四五"圆满收官，中国式现代化迈出新的坚实步伐。</p>
+                <p>• <strong>经济数据</strong>：国内生产总值增长<span class="highlight">5%</span>，总量达到<span class="highlight">140.19 万亿元</span>；城镇新增就业<span class="highlight">1267 万人</span>；粮食产量<span class="highlight">1.43 万亿斤</span>。</p>
+                <p>• <strong>民生保障</strong>：居民收入增长和经济增长同步，实施学前一年免费教育惠及 1400 万儿童，全面实施育儿补贴制度惠及 3000 多万婴幼儿。</p>
+            </div>
+
+            <div class="card" style="border-left-color: #27ae60;">
+                <h3>🚀 向新向优：新质生产力稳步发展</h3>
+                <p>• <strong>科技创新</strong>：人工智能、生物医药、机器人、量子科技等研发应用走在世界前列，芯片自主研发有新突破，天问二号（2025 年 5 月 29 日发射，开启小行星探测之旅）开启"追星"之旅，北斗规模应用全面拓展（2025 年产业规模达 6200 亿元，高精度定位从米级提升至毫米级）。</p>
+                <p>• <strong>重大工程</strong>：雅下水电工程开工建设（西藏林芝市，2025 年 7 月 19 日开工，总投资 1.2 万亿元，年发电量 3000 亿千瓦时），首艘国产电磁弹射型航母福建舰正式入列，国产大模型引领全球开源生态。</p>
+                <p>• <strong>产业升级</strong>：高技术制造业、装备制造业增加值分别增长<span class="highlight">9.4%</span>、<span class="highlight">9.2%</span>，工业机器人、集成电路产量分别增长<span class="highlight">28%</span>、<span class="highlight">10.9%</span>，新能源汽车年产量超过<span class="highlight">1600 万辆</span>。</p>
+            </div>
+
+            <div class="card" style="border-left-color: #27ae60;">
+                <h3>💪 沉着应对：外部冲击与内部转型</h3>
+                <p>• <strong>外部挑战</strong>：国际经贸环境急剧变化，单边主义、保护主义陡然升级，对外贸易明显承压。</p>
+                <p>• <strong>内部困难</strong>：国内经济深刻转型，深层次结构性矛盾问题持续显现，消费、投资增长动力不足。</p>
+                <p>• <strong>应对之策</strong>：对外有理有力有效开展经贸斗争，中美 5 轮经贸磋商取得积极成果；对内打好政策"组合拳"，加强宏观政策逆周期调节，稳就业、稳企业、稳市场、稳预期。</p>
+                <p>• <strong>宝贵经验</strong>：必须充分挖掘经济潜能、必须坚持政策支持和改革创新并举、必须做到既"放得活"又"管得好"、必须以苦练内功来应对外部挑战。</p>
+            </div>
+
+            <div class="card" style="border-left-color: #27ae60;">
+                <h3>📈 2026 年经济社会发展总体要求和政策取向</h3>
+                <p>• <strong>总体要求</strong>：坚持稳中求进工作总基调，完整准确全面贯彻新发展理念，加快构建新发展格局，扎实推动高质量发展。</p>
+                <p>• <strong>主要预期目标</strong>：国内生产总值增长<span class="highlight">5% 左右</span>；城镇新增就业<span class="highlight">1200 万人以上</span>；城镇调查失业率<span class="highlight">5.5% 左右</span>；居民消费价格涨幅<span class="highlight">2% 左右</span>；居民收入增长和经济增长同步。</p>
+                <p>• <strong>宏观政策</strong>：实施更加积极的财政政策和适度宽松的货币政策，适时降准降息，保持流动性充裕。</p>
+            </div>
+        </div>
+
+        <div id="topic1" class="section-content">
+            <h2>话题一：未成年人网络治理 <span class="topic-tag">社会热点</span></h2>
+            
+            <div class="card">
+                <h3>一、乱象直击：从"低俗"到"隐形陷阱"</h3>
+                <p>• <span class="highlight">AI 魔改经典 IP：</span>利用 AI 技术将《小猪佩奇》等形象暴力分尸、植入成人化叙事，画风诡异血腥。<span class="source-tag">半月谈</span></p>
+                <p>• <span class="highlight">脏话游戏解说：</span>打着"儿童向"旗号，通篇粗俗词汇及无意义烂梗，成为"语言污染源"。<span class="source-tag">半月谈</span></p>
+                <p>• <span class="highlight">软色情与伪科学：</span>短视频平台出现"软色情"擦边球、炫富拜金导向及伪装科普，隐蔽性强。<span class="source-tag">半月谈</span></p>
+            </div>
+
+            <div class="card">
+                <h3>二、深层危害：不止于"学坏"</h3>
+                <p>• <span class="highlight">价值观扭曲：</span>过早接触暴力冷漠内容，导致性格暴躁偏激，丧失对真善美的感知。<span class="source-tag">半月谈</span></p>
+                <p>• <span class="highlight">心智退化：</span>长期陷入被动接受高刺激内容，导致独立思考能力和专注力严重退化。<span class="source-tag">半月谈</span></p>
+            </div>
+
+            <div class="card">
+                <h3>三、治理良方：多方协同与法治刚性</h3>
+                <p>• <span class="highlight">落实司法刚性：</span>出台工作指引，明确未成年人打赏无效裁判尺度，发布典型案例强化惩处力度。<span class="source-tag">半月谈</span></p>
+                <p>• <span class="highlight">加强全链条治理：</span>建立"事前预防、事中监控、事后追责"闭环，压实平台主体责任，优化算法推荐机制。<span class="source-tag">综合整理</span></p>
+                <p>• <span class="highlight">完善技术标准：</span>升级"青少年模式"防绕过技术，建立"毒内容"特征库，提升识别拦截效率。<span class="source-tag">综合整理</span></p>
+                <p>• <span class="highlight">强化家校监护：</span>家长履行监督职责，学校开展媒介素养教育，提升学生辨别"毒内容"能力。<span class="source-tag">综合整理</span></p>
+            </div>
+        </div>
+
+        <div id="topic2" class="section-content">
+            <h2>话题二：乡村振兴 <span class="topic-tag green">国家战略</span></h2>
+            
+            <div class="card">
+                <h3>一、破局路径：驱动三化转型</h3>
+                <p>• <span class="highlight">推广企业化运营：</span>引入龙头企业，推行"公司 + 合作社 + 农户"模式，统一标准品牌，让农民变身"产业工人"。<span class="source-tag">半月谈</span></p>
+                <p>• <span class="highlight">延伸产业化链条：</span>从卖"原字号"向卖"制成品"转变，发展深加工与农旅融合，大幅提升产品附加值。<span class="source-tag">半月谈</span></p>
+                <p>• <span class="highlight">深化互联网赋能：</span>利用电商直播打破地域限制，运用大数据实现"以销定产"，解决产销不对称难题。<span class="source-tag">半月谈</span></p>
+            </div>
+
+            <div class="card">
+                <h3>二、富民成效：实现造血功能</h3>
+                <p>• <span class="highlight">拓宽收入渠道：</span>农民获得"租金 + 薪金 + 股金"三份收入，显著增加家庭总收入。<span class="source-tag">半月谈</span></p>
+                <p>• <span class="highlight">吸引人才回流：</span>产业兴旺吸引"新农人"、大学生返乡创业，有效缓解农村"空心化"。<span class="source-tag">半月谈</span></p>
+                <p>• <span class="highlight">壮大集体经济：</span>推动资源变资产、资金变股金，增强村级公共服务和治理能力。<span class="source-tag">综合整理</span></p>
+            </div>
+
+            <div class="card">
+                <h3>三、关键举措：落实具体方法</h3>
+                <p>• <span class="highlight">实施品牌强农：</span>打造"一村一品"，注册地理标志产品，讲好乡村故事，提升溢价能力。<span class="source-tag">半月谈</span></p>
+                <p>• <span class="highlight">推动科技下乡：</span>推广智慧农业（无人机、智能灌溉），建立专家工作站，提高生产效率。<span class="source-tag">综合整理</span></p>
+                <p>• <span class="highlight">创新金融服务：</span>开发"惠农贷""保险 + 期货"产品，解决融资难与价格波动风险。<span class="source-tag">综合整理</span></p>
+                <p>• <span class="highlight">完善基础设施：</span>加强冷链物流、网络基站建设，打通农产品上行"最初一公里"。<span class="source-tag">综合整理</span></p>
+            </div>
+
+            <div class="card">
+                <h3>四、深远意义：夯实现代化基石</h3>
+                <p>• <span class="highlight">促进共同富裕：</span>缩小城乡差距，是实现全体人民共同富裕的必由之路。<span class="source-tag">理论升华</span></p>
+                <p>• <span class="highlight">保障粮食安全：</span>稳住农业基本盘，把饭碗牢牢端在自己手中。<span class="source-tag">理论升华</span></p>
+            </div>
+        </div>
+
+        <div id="topic3" class="section-content">
+            <h2>话题三：规划对比与实现目标 <span class="topic-tag orange">核心逻辑</span></h2>
+            
+            <div class="card" style="border-left-color: #27ae60;">
+                <h3>💡 核心逻辑总结</h3>
+                <p>• <strong>"十四五"定位：</strong>全面建成小康社会后的第一个五年，第二个百年奋斗目标的良好开局，夯基垒台、积厚成势。</p>
+                <p>• <strong>"十四五"特征：</strong>解决了"有没有"、"大不大"的问题，实现了量的积累和质的初步转变。</p>
+                <p>• <strong>"十五五"定位：</strong>基本实现社会主义现代化夯实基础、全面发力的关键时期（承上启下），立柱架梁、全面发力。</p>
+                <p>• <strong>"十五五"特征：</strong>解决"强不强"、"好不好"的问题，聚焦关键指标达标（人均 GDP、碳达峰、治理现代化）。</p>
+                <p>• <strong>两者关系：</strong>共同构成了通往 2035 年基本实现社会主义现代化的完整链条。"十四五"完成从"量变"到"质变"的积累，"十五五"推动"质变"的深化与固化。</p>
+            </div>
+
+            <div class="card">
+                <h3>一、经济实力与科技创新</h3>
+                <p><strong>🏆 十四五成就：</strong></p>
+                <p>• 经济总量连续跨越 110 万亿至<span class="highlight">140 万亿元</span>关口，人均 GDP 连续 3 年超 1.3 万美元。</p>
+                <p>• 制造业增加值连续<span class="highlight">16 年</span>稳居世界首位。</p>
+                <p>• 创新指数首次跻身全球<span class="highlight">前十</span>，研发人员总量世界第一。</p>
+                <p>• <strong>新案例</strong>：宁波舟山港成为全球首个年货物吞吐量超<span class="highlight">14 亿吨</span>大港。</p>
+                <p><strong>🎯 对应现代化目标：</strong>经济实力、科技实力、综合国力大幅跃升；进入创新型国家前列。</p>
+                <p><strong>🚀 十五五规划任务：</strong>人均 GDP 达到<span class="highlight">中等发达国家水平</span>；关键核心技术<span class="highlight">完全自主可控</span>。</p>
+            </div>
+
+            <div class="card">
+                <h3>二、绿色发展与生态文明</h3>
+                <p><strong>🏆 十四五成就：</strong></p>
+                <p>• 构建全球最大、最快发展的可再生能源体系，全球一半以上新能源汽车行驶在中国。</p>
+                <p>• 长江经济带 GDP 占全国比重提升至<span class="highlight">47.3%</span>，优良水质比例升至<span class="highlight">96.5%</span>。</p>
+                <p>• 成为全球能耗强度下降最快国家之一。</p>
+                <p><strong>🎯 对应现代化目标：</strong>绿色生产生活方式广泛形成；生态环境根本好转，美丽中国目标基本实现。</p>
+                <p><strong>🚀 十五五规划任务：</strong>确保<span class="highlight">2030 年前碳达峰</span>高质量实现；非化石能源消费比重达 25% 左右。</p>
+            </div>
+
+            <div class="card">
+                <h3>三、民生保障与共同富裕</h3>
+                <p><strong>🏆 十四五成就：</strong></p>
+                <p>• 建成全球规模最大的教育、社保、医疗卫生体系，参保率均超<span class="highlight">95%</span>。</p>
+                <p>• 城乡居民收入比降至<span class="highlight">2.31:1</span>，城镇化率升至 67.89%。</p>
+                <p>• <strong>新案例</strong>：西藏定日县地震后快速重建新居；建立育儿补贴制度，发展银发经济。</p>
+                <p><strong>🎯 对应现代化目标：</strong>全体人民共同富裕取得更为明显的实质性进展；基本公共服务实现均等化。</p>
+                <p><strong>🚀 十五五规划任务：</strong>基本公共服务实现<span class="highlight">全覆盖、均等化</span>；中等收入群体占比显著提升。</p>
+            </div>
+
+            <div class="card">
+                <h3>五、国家安全与社会治理</h3>
+                <p><strong>🏆 十四五成就：</strong></p>
+                <p>• 粮食产量连续两年站稳<span class="highlight">1.4 万亿斤</span>台阶，端牢中国饭碗。</p>
+                <p>• 有效应对世纪疫情及一系列重大风险挑战。</p>
+                <p>• 国防和军队现代化加快推进。</p>
+                <p><strong>🎯 对应现代化目标：</strong>平安中国建设达到更高水平；基本实现国防和军队现代化。</p>
+                <p><strong>🚀 十五五规划任务：</strong>关键领域安全保证能力<span class="highlight">全面提升</span>；基本实现国防和军队现代化。</p>
+            </div>
+
+            <!-- 外交政策与对外关系 -->
+            <div class="card" style="border-left-color: #8e44ad; margin-top:20px;">
+                <h3>六、外交政策与对外关系</h3>
+                <p style="font-size:0.9rem; color:#555; margin-bottom:20px;">2026 年 3 月 8 日，中共中央政治局委员、外交部长王毅在十四届全国人大四次会议记者会上就中国外交政策和对外关系回答中外记者提问。</p>
+                
+                <!-- 要点一：国际局势判断 -->
+                <div style="margin-bottom:20px;">
+                    <h4 style="color:#2980b9; margin-bottom:10px; font-size:1rem;">🔑 要点一：国际局势的科学判断</h4>
+                    <div style="background:#f8f9fa; padding:15px; border-radius:8px;">
+                        <p><strong>世界形势</strong>：百年变局加速演进，变革动乱相互交织，战争冲突此起彼伏。</p>
+                        <p style="margin-top:8px;"><strong>中国态势</strong>：强国建设快马加鞭，民族复兴势不可挡，国际影响与日俱增。</p>
+                        <p style="margin-top:8px;"><strong>中国定位</strong>：作为世界上最重要的<strong>和平力量、稳定力量、正义力量</strong>，中国对人类社会的前途充满信心。</p>
+                    </div>
+                </div>
+
+                <!-- 要点二：外交政策的"四个坚定" -->
+                <div style="margin-bottom:20px;">
+                    <h4 style="color:#2980b9; margin-bottom:10px; font-size:1rem;">🔑 要点二：外交政策的"四个坚定"</h4>
+                    <div style="background:#e8f6f3; padding:15px; border-radius:8px;">
+                        <p style="margin-bottom:8px;">• <strong>坚定捍卫国家的主权、安全、发展利益</strong>：这是中国外交的核心使命和根本任务。</p>
+                        <p style="margin-bottom:8px;">• <strong>坚定维护国际法治和公平正义</strong>：坚持真正的多边主义，维护以联合国为核心的国际体系。</p>
+                        <p style="margin-bottom:8px;">• <strong>坚定反对一切单边行径和强权霸凌</strong>：反对霸权主义和强权政治，推动国际关系民主化。</p>
+                        <p>• <strong>坚定恪守并履行应尽的国际义务</strong>：展现负责任大国担当，为人类和平与发展事业作出贡献。</p>
+                    </div>
+                </div>
+
+                <!-- 要点三：元首外交的丰硕成果 -->
+                <div style="margin-bottom:20px;">
+                    <h4 style="color:#2980b9; margin-bottom:10px; font-size:1rem;">🔑 要点三：元首外交的丰硕成果（2025 年）</h4>
+                    <div style="background:#fef9e7; padding:15px; border-radius:8px;">
+                        <p><strong>元首外交定位</strong>：是中国外交的<strong>定盘星</strong>，为动荡世界提供了最宝贵的<strong>稳定性和确定性</strong>，成为全球乱局中不可替代的中流砥柱。</p>
+                        <p style="margin-top:10px;"><strong>四大成果</strong>：</p>
+                        <p style="margin-bottom:8px;">• <strong>大国关系</strong>：与世界主要国家领导人举行重要会晤，开展战略沟通，开创了大国对话协调的新实践。</p>
+                        <p style="margin-bottom:8px;">• <strong>周边外交</strong>：出访东南亚、俄罗斯、中亚和韩国，巩固了周边睦邻友好的新局面。</p>
+                        <p style="margin-bottom:8px;">• <strong>全球南方</strong>：主持上海合作组织天津峰会和中国－拉共体论坛，汇聚了全球南方大团结的新动能。</p>
+                        <p>• <strong>捍卫和平</strong>：出席纪念中国人民抗日战争暨世界反法西斯战争胜利 80 周年系列活动，发出了捍卫和平与正义的新强音。</p>
+                    </div>
+                </div>
+
+                <!-- 要点四：中俄关系 -->
+                <div style="margin-bottom:20px;">
+                    <h4 style="color:#2980b9; margin-bottom:10px; font-size:1rem;">🔑 要点四：中俄关系——大国关系典范</h4>
+                    <div style="background:#f0f8ff; padding:15px; border-radius:8px;">
+                        <p><strong>重要节点</strong>：2026 年是中俄战略协作伙伴关系建立 30 周年，《中俄睦邻友好合作条约》签署 25 周年。</p>
+                        <p style="margin-top:10px;"><strong>三大特征</strong>：</p>
+                        <p style="margin-bottom:8px;">• <strong>战略上独立自主</strong>：尊重对方核心利益，不把自己的意志和议程强加给对方，坚持不结盟、不对抗、不针对第三方。</p>
+                        <p style="margin-bottom:8px;">• <strong>政治上高度互信</strong>：背靠背是中俄关系的本质特征，不惧任何外部的挑拨和施压，具有强大战略韧性。</p>
+                        <p>• <strong>行动上密切协作</strong>：对于重大国际和地区事务，中俄之间战略共识最多，战略协作最密。</p>
+                        <p style="margin-top:10px;"><strong>共同捍卫国际秩序</strong>：2025 年，中俄两国元首相互出席对方的纪念世界反法西斯战争胜利庆典，围绕深化全面战略协作、巩固全球战略稳定、维护国际法权威发表三份重磅联合声明。80 年前为创建战后秩序作出"中俄贡献"，80 年后的今天将为迎接多极世界注入"中俄能量"。</p>
+                    </div>
+                </div>
+
+                <!-- 要点五：主场外交 -->
+                <div style="margin-bottom:20px;">
+                    <h4 style="color:#2980b9; margin-bottom:10px; font-size:1rem;">🔑 要点五：2026 年主场外交亮点</h4>
+                    <div style="background:#fff5e6; padding:15px; border-radius:8px;">
+                        <p><strong>APEC 中国年</strong>：2026 年 11 月将在深圳举行亚太经合组织（APEC）第三十三次领导人非正式会议。这是中国第 3 次担任 APEC 东道主（2001 年上海、2014 年北京、2026 年深圳）。</p>
+                        <p style="margin-top:10px;"><strong>其他主场外交</strong>：</p>
+                        <p style="margin-bottom:8px;">• <strong>亚太经合组织领导人非正式会议</strong>：推动亚太区域合作，促进区域经济一体化。</p>
+                        <p>• <strong>第二届中国－阿拉伯国家峰会</strong>：深化中阿战略伙伴关系，推动共建"一带一路"高质量发展。</p>
+                    </div>
+                </div>
+
+                <!-- 要点六：外交理念 -->
+                <div style="margin-bottom:20px;">
+                    <h4 style="color:#2980b9; margin-bottom:10px; font-size:1rem;">🔑 要点六：外交理念与目标</h4>
+                    <div style="background:#f8f9fa; padding:15px; border-radius:8px;">
+                        <p><strong>根本遵循</strong>：遵循<strong>习近平外交思想</strong>科学指引，这是新时代中国外交的根本遵循和行动指南。</p>
+                        <p style="margin-top:10px;"><strong>崇高目标</strong>：构建<strong>人类命运共同体</strong>，不断续写和平、发展、合作、共赢的时代篇章。</p>
+                        <p style="margin-top:10px;"><strong>三个"必将推动"</strong>：</p>
+                        <p style="margin-bottom:8px;">• 必将推动中国与世界的关系朝着更加积极的方向迈进。</p>
+                        <p style="margin-bottom:8px;">• 必将推动人类命运共同体建设开辟新的境界。</p>
+                        <p>• 必将推动中华民族为世界的和平与发展事业作出新的贡献。</p>
+                    </div>
+                </div>
+
+                <!-- 金句总结 -->
+                <p style="margin-top:20px; font-weight:bold; color:#2c3e50; background:#e8f6f3; padding:15px; border-radius:8px; text-align:center;">
+                    🎯 王毅外长强调："中国外交坚定站在历史前进的正确一边。作为世界上最重要的和平力量、稳定力量、正义力量，我们对人类的前途充满信心，愿同一切志同道合的国家一道，朝着构建人类命运共同体的崇高目标，不断续写和平、发展、合作、共赢的时代篇章。"
+                </p>
+            </div>
+        </div>
+
+        <div id="topic4" class="section-content">
+            <h2>话题四：词语解释 <span class="topic-tag">基础概念</span></h2>
+            
+            <p style="font-size:0.9rem; color:#555; margin-bottom:20px;">本话题包含三个重要概念：非遗活态传承、中华民族共同体、亲清新型政商关系。</p>
+            
+            <div class="card" style="border-left-color: #16a085;">
+                <h3>一、非遗活态传承</h3>
+                <p style="font-size:0.9rem; color:#555; margin-bottom:20px;">非物质文化遗产在社会生活中不断被实践、再创造和发展的过程，强调其生命力和动态性。</p>
+                
+                <!-- 要点一：概念 -->
+                <div style="margin-bottom:20px;">
+                    <h4 style="color:#2980b9; margin-bottom:10px; font-size:1rem;">🔑 要点一：概念定义</h4>
+                    <div style="background:#f8f9fa; padding:15px; border-radius:8px;">
+                        <p><strong>非物质文化遗产（非遗）</strong>是指各民族、各地区在历史发展过程中形成的，具有文化价值的传统文化表现形式，包括民间文学、传统音乐、传统舞蹈、传统戏剧、传统技艺等。</p>
+                        <p style="margin-top:8px;"><strong>活态传承</strong>是指非遗在社会生活中不断被实践、再创造和发展的过程，强调其生命力和动态性。根据联合国教科文组织《保护非物质文化遗产公约》，非遗的保护旨在确保其生命力，包括确认、保存、传承和弘扬等多方面的措施。</p>
+                    </div>
+                </div>
+
+                <!-- 要点二：特点 -->
+                <div style="margin-bottom:20px;">
+                    <h4 style="color:#2980b9; margin-bottom:10px; font-size:1rem;">🔑 要点二：核心特点</h4>
+                    <div style="background:#e8f6f3; padding:15px; border-radius:8px;">
+                        <p style="margin-bottom:8px;">• <strong>动态性</strong>：非遗不是静态的，而是随着社会的发展和文化的演变而不断变化的。活态传承强调非遗在当代社会中的实际应用和再创造。</p>
+                        <p style="margin-bottom:8px;">• <strong>人本性</strong>：非遗的传承依赖于人们的实践和经验，强调传承人和社区的参与。即使在某些时期出现断层，非遗也可以在适当的社会环境中重新复活。</p>
+                        <p>• <strong>多样性</strong>：非遗的表现形式和传承方式因地域、文化背景的不同而各具特色，保护措施也应因地制宜。</p>
+                    </div>
+                </div>
+
+                <!-- 要点三：保护与传承 -->
+                <div style="margin-bottom:20px;">
+                    <h4 style="color:#2980b9; margin-bottom:10px; font-size:1rem;">🔑 要点三：保护与传承</h4>
+                    <div style="background:#fef9e7; padding:15px; border-radius:8px;">
+                        <p>非遗的保护不仅仅是对传统形式的保存，更重要的是要促进其在现代社会中的活跃和发展。保护的方针包括<strong>"保护为主，抢救第一，合理利用，传承发展"</strong>，其中<strong>"传承发展"</strong>是非遗保护的核心。</p>
+                    </div>
+                </div>
+
+                <!-- 要点四：实践案例与结论 -->
+                <div style="margin-bottom:15px;">
+                    <h4 style="color:#2980b9; margin-bottom:10px; font-size:1rem;">🔑 要点四：实践案例与结论</h4>
+                    <div style="background:#f0f8ff; padding:15px; border-radius:8px;">
+                        <p style="margin-bottom:10px;"><strong>【实践案例】</strong>青海热贡的"六月会"祭祀活动中，传统的活羊祭祀方式已经演变为用木条制作的山羊形状进行祭祀，这种变化体现了非遗在现代社会中的适应与再创造。</p>
+                        <p><strong>【结论】</strong>非遗的活态传承是一个复杂而动态的过程，涉及文化的保护、传承和创新。随着社会对非遗的关注度提高，相关的保护和传承工作也在不断深入，非遗的价值和意义得到了更广泛的认可和尊重。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 中华民族共同体 -->
+            <div class="card" style="border-left-color: #e74c3c; margin-top:20px;">
+                <h3>二、中华民族共同体</h3>
+                <p style="font-size:0.9rem; color:#555; margin-bottom:20px;">2026 年 3 月 5 日，《中华人民共和国民族团结进步促进法（草案）》提请十四届全国人大四次会议审议，为铸牢中华民族共同体意识夯实法治根基。</p>
+                
+                <!-- 要点一：概念定义 -->
+                <div style="margin-bottom:20px;">
+                    <h4 style="color:#2980b9; margin-bottom:10px; font-size:1rem;">🔑 要点一：概念定义与思想领航</h4>
+                    <div style="background:#f8f9fa; padding:15px; border-radius:8px;">
+                        <p><strong>中华民族共同体意识</strong>是新时代党的民族工作的主线，也是民族地区各项工作的主线。这是习近平总书记提出的重大原创性论断，是马克思主义民族理论中国化时代化的最新成果。</p>
+                        <p style="margin-top:8px;"><strong>思想发展历程</strong>：2014 年，习近平总书记在第二次中央新疆工作座谈会上鲜明提出"中华民族共同体意识"；2017 年，党的十九大提出"铸牢中华民族共同体意识"并写入党章；2021 年，中央民族工作会议提出"十二个必须"；2024 年，将中华民族历史观由"四个共同"拓展为"五个共同"。</p>
+                        <p style="margin-top:8px;"><strong>法治保障</strong>：制定民族团结进步促进法，将习近平总书记关于加强和改进民族工作的重要思想转化为国家意志，从制度上、法律上保证党对民族工作的全面领导。</p>
+                    </div>
+                </div>
+
+                <!-- 要点二：五个共同的中华民族历史观 -->
+                <div style="margin-bottom:20px;">
+                    <h4 style="color:#2980b9; margin-bottom:10px; font-size:1rem;">🔑 要点二："五个共同"的中华民族历史观</h4>
+                    <div style="background:#e8f6f3; padding:15px; border-radius:8px;">
+                        <p style="margin-bottom:8px;">• <strong>共同开拓辽阔疆域</strong>：我国各民族共同开发了祖国的锦绣河山、广袤疆域。</p>
+                        <p style="margin-bottom:8px;">• <strong>共同书写悠久历史</strong>：各民族共同创造了中国历史，共同推动了中华民族的形成和发展。</p>
+                        <p style="margin-bottom:8px;">• <strong>共同创造灿烂文化</strong>：各民族共同创造了博大精深的中华文明，形成了多元一体的文化格局。</p>
+                        <p style="margin-bottom:8px;">• <strong>共同培育伟大精神</strong>：在长期交往交流交融中，形成了以爱国主义为核心的民族精神。</p>
+                        <p>• <strong>共同建设伟大祖国</strong>：各民族共同建设社会主义现代化国家，共同实现中华民族伟大复兴。</p>
+                    </div>
+                </div>
+
+                <!-- 要点三：重大意义 -->
+                <div style="margin-bottom:20px;">
+                    <h4 style="color:#2980b9; margin-bottom:10px; font-size:1rem;">🔑 要点三：重大意义与战略高度</h4>
+                    <div style="background:#fef9e7; padding:15px; border-radius:8px;">
+                        <p style="margin-bottom:8px;">• <strong>事关祖国统一和边疆巩固</strong>：做好民族工作，关系国家主权和领土完整，关系边疆地区长治久安。</p>
+                        <p style="margin-bottom:8px;">• <strong>事关民族团结和社会稳定</strong>：民族团结是我国各族人民的生命线，是社会发展稳定的重要基础。</p>
+                        <p>• <strong>事关国家长治久安和中华民族伟大复兴</strong>：铸牢中华民族共同体意识，汇聚起同心共圆中国梦的强大合力，为全面推进强国建设、民族复兴伟业提供坚实保障。</p>
+                    </div>
+                </div>
+
+                <!-- 要点四：实践成就与典型案例 -->
+                <div style="margin-bottom:15px;">
+                    <h4 style="color:#2980b9; margin-bottom:10px; font-size:1rem;">🔑 要点四：实践成就与典型案例</h4>
+                    <div style="background:#f0f8ff; padding:15px; border-radius:8px;">
+                        <p style="margin-bottom:10px;"><strong>【典型案例：云南文山农加贵代表】</strong>在十四届全国人大四次会议"代表通道"上，来自云南文山的壮族教师农加贵讲述了奉献乡村教育、亲历山乡巨变的故事。落松地小学从漏风漏雨的破房子变成宽敞明亮的教学楼，闭塞的小山村摆脱疾病和贫困，成为民族团结进步示范村，展现了党的十八大以来我国民族团结进步事业的生动局面。</p>
+                        <p style="margin-bottom:10px;"><strong>【制度成就】</strong>党的十八大以来，以习近平同志为核心的党中央从全面推进强国建设、民族复兴伟业的战略高度出发，坚持"两个结合"，不断推进马克思主义民族理论中国化时代化，指引党的民族工作取得新的历史性成就。</p>
+                        <p><strong>【法治进程】</strong>2026 年 3 月，近 3000 名全国人大代表齐聚人民大会堂，为民族团结进步促进法建言献策。这部法律将进一步增强中华民族凝聚力向心力，推动全国各族人民更加紧密团结在以习近平同志为核心的党中央周围。</p>
+                    </div>
+                </div>
+
+                <!-- 金句总结 -->
+                <p style="margin-top:20px; font-weight:bold; color:#2c3e50; background:#fff5e6; padding:15px; border-radius:8px; text-align:center;">
+                    🎯 习近平总书记强调："实现中华民族伟大复兴的中国梦，就要以铸牢中华民族共同体意识为主线，把民族团结进步事业作为基础性事业抓紧抓好。"民族团结是我国各族人民的生命线，维护国家统一、促进民族团结进步是全体中国人民的共同责任。
+                </p>
+            </div>
+
+            <!-- 亲清新型政商关系 -->
+            <div class="card" style="border-left-color: #16a085; margin-top:20px;">
+                <h3>三、亲清新型政商关系</h3>
+                <p style="font-size:0.9rem; color:#555; margin-bottom:20px;">2016 年 3 月 4 日，习近平总书记首次以"亲""清"二字为新型政商关系定调。十年来，从"定调"到"定心"，"亲""清"护航民营经济高质量发展。</p>
+                
+                <!-- 要点一：概念内涵 -->
+                <div style="margin-bottom:20px;">
+                    <h4 style="color:#2980b9; margin-bottom:10px; font-size:1rem;">🔑 要点一：概念内涵与"亲""清"释义</h4>
+                    <div style="background:#f8f9fa; padding:15px; border-radius:8px;">
+                        <p><strong>提出背景</strong>：2016 年 3 月 4 日，习近平总书记在参加全国政协会议民建、工商联界委员联组会时，首次以"亲""清"二字为新型政商关系定调。</p>
+                        <p style="margin-top:10px;"><strong>"亲"的内涵（有温度）</strong>：</p>
+                        <p style="margin-bottom:8px; margin-left:20px;">• <strong>对领导干部</strong>：坦荡真诚，主动靠前、真情服务，把企业家当成"自己人"。</p>
+                        <p style="margin-bottom:8px; margin-left:20px;">• <strong>对民营企业家</strong>：积极主动，与党委政府沟通联系，讲真话、说实情、建真言。</p>
+                        <p style="margin-top:10px;"><strong>"清"的内涵（有底线）</strong>：</p>
+                        <p style="margin-bottom:8px; margin-left:20px;">• <strong>对领导干部</strong>：清白纯洁，守住底线、把好分寸，不搞权钱交易、利益输送。</p>
+                        <p style="margin-bottom:8px; margin-left:20px;">• <strong>对民营企业家</strong>：洁身自好，遵纪守法办企业、光明正大搞经营。</p>
+                    </div>
+                </div>
+
+                <!-- 要点二：十年发展历程 -->
+                <div style="margin-bottom:20px;">
+                    <h4 style="color:#2980b9; margin-bottom:10px; font-size:1rem;">🔑 要点二：十年发展历程与政策演进</h4>
+                    <div style="background:#e8f6f3; padding:15px; border-radius:8px;">
+                        <p style="margin-bottom:10px;"><strong>2016 年："亲""清"定调</strong></p>
+                        <p style="margin-left:20px; margin-bottom:8px;">习近平总书记从领导干部和民营企业家两方面阐释"亲""清"内涵，要求领导干部坦荡真诚、清白纯洁，要求民营企业家积极主动、洁身自好。</p>
+                        
+                        <p style="margin-bottom:10px;"><strong>2018 年："自己人"</strong></p>
+                        <p style="margin-left:20px; margin-bottom:8px;">提出民营企业和民营企业家是"自己人"，让民营企业家在困难和挑战中看到前途、看到光明、看到未来。</p>
+                        
+                        <p style="margin-bottom:10px;"><strong>2023 年：落到实处</strong></p>
+                        <p style="margin-left:20px; margin-bottom:8px;">全国两会期间明确提出"要把构建亲清政商关系落到实处"。</p>
+                        
+                        <p style="margin-bottom:10px;"><strong>2025 年：法治保障</strong></p>
+                        <p style="margin-left:20px; margin-bottom:8px;">习近平再次出席民营企业座谈会，强调"党和国家对民营经济发展的基本方针政策，已经纳入中国特色社会主义制度体系，将一以贯之坚持和落实，不能变，也不会变"。中国首部专门关于民营经济发展的基础性法律——<strong>民营经济促进法</strong>正式施行。</p>
+                        
+                        <p style="margin-bottom:10px;"><strong>2026 年：完善配套</strong></p>
+                        <p style="margin-left:20px;">政府工作报告强调完善民营经济促进法配套法规政策，为政商关系在法治轨道上健康运行提供法律保障和制度支撑。</p>
+                    </div>
+                </div>
+
+                <!-- 要点三：软环境与硬实力 -->
+                <div style="margin-bottom:20px;">
+                    <h4 style="color:#2980b9; margin-bottom:10px; font-size:1rem;">🔑 要点三："软"环境铸就"硬"实力</h4>
+                    <div style="background:#fef9e7; padding:15px; border-radius:8px;">
+                        <p style="margin-bottom:10px;"><strong>营商环境优化</strong>：</p>
+                        <p style="margin-bottom:8px;">• 十年来，中国多地就优化营商环境出台地方性法规。</p>
+                        <p style="margin-bottom:8px;">• 大江南北，亲清政商关系从理念深化为制度、从承诺兑现为行动。</p>
+                        <p style="margin-bottom:8px;">• <strong>"有事必应、无事不扰"</strong>等原则正在融入政商相处的日常。</p>
+                        
+                        <p style="margin-top:10px; margin-bottom:10px;"><strong>发展成效</strong>：</p>
+                        <p style="margin-bottom:8px;">• 在外部压力加大、内部困难增多的复杂严峻形势下，全国工商联"2025 中国民营企业 500 强"相关调研分析报告显示，民企 500 强入围门槛提高至<strong>270.23 亿元</strong>，净利润合计<strong>1.8 万亿元</strong>。</p>
+                        <p style="margin-bottom:8px;">• 实现规模与效益双提升，观察家指"<strong>逆水行舟显韧性</strong>"。</p>
+                        <p>• "硬"实力来自"软"环境，更优的营商"软"环境，更强的企业"硬"实力，民营经济发展正开启新篇章。</p>
+                    </div>
+                </div>
+
+                <!-- 要点四：实践要求 -->
+                <div style="margin-bottom:15px;">
+                    <h4 style="color:#2980b9; margin-bottom:10px; font-size:1rem;">🔑 要点四：构建亲清政商关系的实践要求</h4>
+                    <div style="background:#f0f8ff; padding:15px; border-radius:8px;">
+                        <p style="margin-bottom:10px;"><strong>【领导干部层面】</strong></p>
+                        <p style="margin-bottom:8px;">• <strong>坦荡真诚</strong>：主动靠前服务，把企业家当成"自己人"，让民营企业真正感受到政策的温度、发展的力度。</p>
+                        <p style="margin-bottom:8px;">• <strong>清白纯洁</strong>：守住底线、把好分寸，不搞权钱交易、利益输送，构建清爽干净的政商关系。</p>
+                        <p style="margin-bottom:8px;">• <strong>依法办事</strong>：在法治轨道上健康运行，为企业公平参与市场竞争、有效保护合法权益提供制度支撑。</p>
+                        
+                        <p style="margin-bottom:10px; margin-top:15px;"><strong>【民营企业家层面】</strong></p>
+                        <p style="margin-bottom:8px;">• <strong>积极主动</strong>：同党委政府沟通联系，讲真话、说实情、建真言，共谋发展克难关。</p>
+                        <p style="margin-bottom:8px;">• <strong>洁身自好</strong>：遵纪守法办企业、光明正大搞经营，保持爱拼会赢的精气神。</p>
+                        <p style="margin-bottom:8px;">• <strong>转型升级</strong>：抓住历史机遇，赢得发展先机，在转型升级中实现高质量发展。</p>
+                        
+                        <p style="margin-top:15px;"><strong>【制度保障层面】</strong></p>
+                        <p>• 完善民营经济促进法配套法规政策，把促进民营经济发展的政策转化为企业坚定发展的信念"定心丸"。</p>
+                    </div>
+                </div>
+
+                <!-- 金句总结 -->
+                <p style="margin-top:20px; font-weight:bold; color:#2c3e50; background:#e8f6f3; padding:15px; border-radius:8px; text-align:center;">
+                    🎯 从"亲""清"定调到"自己人"，从理念深化到制度保障，十年来，"亲"有温度、"清"有底线，真正把促进民营经济发展的政策转化为企业坚定发展的信念"定心丸"。民营经济，作为推进中国式现代化的生力军，正以"逆水行舟显韧性"的姿态，开启高质量发展新篇章。
+                </p>
+            </div>
+        </div>
+
+        <div id="topic5" class="section-content">
+            <h2>话题五：2026 两会专题 <span class="topic-tag red">时政热点</span></h2>
+            
+            <div class="card" style="border-left-color: #e74c3c;">
+                <h3>一、2026 两会看落实：五个方面的显著成效</h3>
+                <p style="font-size:0.9rem; color:#555; margin-bottom:15px;">2026 年全国两会召开在即，新华社播发"习近平总书记关切事·两会看落实"报道，展现 2025 年全国两会重要指示要求的落实成效。</p>
+                
+                <p><strong>1. 经济大省挑大梁</strong></p>
+                <p>• <strong>总书记指示</strong>：2025 年全国两会上，习近平总书记强调"经济大省要挑大梁"，深刻阐明必须把握好的着力点。</p>
+                <p>• <strong>落实成效</strong>：2025 年，广东、江苏、山东等经济总量排名前十省份，以占全国近两成的面积，贡献全国超六成的国内生产总值。</p>
+                <p>• <strong>责任担当</strong>：各经济大省迎难而上、奋楫笃行，在全国发展大局中打头阵、勇争先、走在前、作示范。</p>
+                <p style="margin-top:10px; background:#f0f8ff; padding:10px; border-radius:5px;"><strong>📊 政府工作报告总结</strong>：实施更加积极有为的宏观政策，着力稳定经济运行。实施更加积极的财政政策和适度宽松的货币政策，加力扩围实施消费品以旧换新，带动商品销售额超过 2.6 万亿元，社会消费品零售总额突破 50 万亿元。</p>
+                
+                <!-- 江苏案例：经济大省的带头作用 -->
+                <div style="margin-top:20px; background:#fff5e6; padding:15px; border-radius:8px; border-left:3px solid #e67e22;">
+                    <h4 style="color:#e67e22; margin-bottom:12px; font-size:1rem;">📌 典型案例：江苏"在研究新情况解决新问题上下功夫、出经验"</h4>
+                    <p style="margin-bottom:10px;"><strong>【总书记要求】</strong>2026 年 3 月 5 日下午，习近平总书记在参加江苏代表团审议时强调，完成"十五五"经济社会发展目标任务，需要应对更加复杂的环境、解决更多深层次矛盾。江苏等经济大省处在改革开放前沿，要在研究新情况、解决新问题上下功夫、出经验。</p>
+                    
+                    <p style="margin-bottom:10px; margin-top:15px;"><strong>【江苏的四大任务】</strong></p>
+                    <p style="margin-bottom:8px;">• <strong>发展新质生产力走在前列</strong>：一体推进教育科技人才发展，力争在加强原始创新和关键核心技术攻关、抢占科技制高点上实现新突破；在促进创新链产业链资金链人才链深度融合、推动科技成果高效转化应用上探索新途径；在优化提升传统产业、培育壮大新兴产业、超前布局未来产业上开创新局面；在进一步深化改革、破除制约新质生产力发展的体制机制障碍上取得新成果。</p>
+                    <p style="margin-bottom:8px;">• <strong>增强经济韧性持续用力</strong>：练好内功、做强自身，全面融入全国统一大市场，助力畅通国内大循环；扩大高水平对外开放，广泛开拓全球市场，更好联通国际循环；以底线思维防范各种风险。</p>
+                    <p style="margin-bottom:8px;">• <strong>探索共同富裕有效途径</strong>：准确把握新形势下人民群众对美好生活新期待和民生工作新特点，积极主动解答如何实现高质量充分就业、如何增加城乡居民收入、如何进一步提升基本公共服务和社会保障水平等课题。</p>
+                    <p style="margin-bottom:8px;">• <strong>树立和践行正确政绩观</strong>：落实"立党为公、为民造福、科学决策、真抓实干"总要求，创造经得起实践、人民、历史检验的实绩。</p>
+                    
+                    <p style="margin-top:12px; font-weight:bold; color:#2c3e50; background:#e8f6f3; padding:10px; border-radius:5px;">💡 江苏启示：经济大省发展底盘稳、抵御外部冲击能力强，才能支撑全国经济大盘稳定。江苏要努力成为全国发展的"压舱石"、改革开放的"排头兵"、科技创新的"先行者"、共同富裕的"探路者"。</p>
+                </div>
+
+                <p style="margin-top:15px;"><strong>2. 科技创新和产业创新融合</strong></p>
+                <p>• <strong>总书记指示</strong>："科技创新和产业创新，是发展新质生产力的基本路径。""让创新链和产业链无缝对接。"</p>
+                <p>• <strong>落实成效</strong>：从"中国天眼"的宇宙探秘，到高性能碳纤维的创新跨越，再到"天穹"科学计算机的高能效表现。</p>
+                <p>• <strong>融合成果</strong>：实验室里的"创新种子"在产业沃土中生根结果，在神州大地铺开新质生产力发展的生动画卷。</p>
+                <p style="margin-top:10px; background:#f0f8ff; padding:10px; border-radius:5px;"><strong>📊 政府工作报告总结</strong>：新质生产力稳步发展，科技创新成果丰硕。人工智能、生物医药、机器人、量子科技等研发应用走在世界前列，芯片自主研发有新突破。高技术制造业、装备制造业增加值分别增长 9.4%、9.2%，工业机器人、集成电路产量分别增长 28%、10.9%，新能源汽车年产量超过 1600 万辆。</p>
+
+                <p style="margin-top:15px;"><strong>3. 守牢实体经济这个根基</strong></p>
+                <p>• <strong>总书记指示</strong>：2025 年全国两会期间强调"要守牢实体经济这个根基"。</p>
+                <p>• <strong>落实成效</strong>：各地各部门坚持把发展经济的着力点放在实体经济上，推动科技创新和产业创新深度融合。</p>
+                <p>• <strong>发展方向</strong>：持续推进产业智能化、绿色化、融合化，现代化产业体系建设迈出坚实步伐。</p>
+                <p style="margin-top:10px; background:#f0f8ff; padding:10px; border-radius:5px;"><strong>📊 政府工作报告总结</strong>：围绕扩大有效投资，加强"两重"项目建设，加快设备更新资金拨付使用，设备购置投资增长 11.8%。设立新型政策性金融工具补充重点项目资本金，持续推进产业智能化、绿色化、融合化。</p>
+
+                <p style="margin-top:15px;"><strong>4. 文化赋能经济社会发展</strong></p>
+                <p>• <strong>总书记指示</strong>：2025 年全国两会期间强调"以文化赋能经济社会发展"。</p>
+                <p>• <strong>落实成效</strong>：从以文化人的绵绵用力，到以文惠民的久久为功，再到以文兴业的欣欣向荣。</p>
+                <p>• <strong>发展成果</strong>：文化润物无声地融入经济社会各领域，发展的文化成色更足、动能更强，筑牢强国建设、民族复兴伟业的文化根基。</p>
+                <p style="margin-top:10px; background:#f0f8ff; padding:10px; border-radius:5px;"><strong>📊 政府工作报告总结</strong>：文旅体等服务消费潜力加快释放，公共文化服务体系更加完善。文化事业和文化产业蓬勃发展，为经济社会发展注入强大精神动力。</p>
+
+                <p style="margin-top:15px;"><strong>5. 教育对科技和人才支撑作用</strong></p>
+                <p>• <strong>总书记指示</strong>："必须深刻把握中国式现代化对教育、科技、人才的需求，强化教育对科技和人才的支撑作用"。</p>
+                <p>• <strong>落实成效</strong>：推动教育强国建设取得新进展，教育对科技、人才的支撑作用更加彰显。</p>
+                <p>• <strong>人才图景</strong>：一幅人才辈出、人尽其才、才尽其用的生动图景徐徐铺展开来。</p>
+                <p style="margin-top:10px; background:#f0f8ff; padding:10px; border-radius:5px;"><strong>📊 政府工作报告总结</strong>：实施学前一年免费教育政策、惠及 1400 万儿童，全面实施育儿补贴制度、惠及 3000 多万婴幼儿。推动人口高质量发展，建立健全生育支持政策，实施积极应对老龄化国家战略。</p>
+            </div>
+
+            <div class="card" style="border-left-color: #27ae60;">
+                <h3>二、五年规划里的大国"治慧"：世界启迪</h3>
+                <p style="font-size:0.9rem; color:#555; margin-bottom:15px;">基于新华社《五年规划里的大国"治慧"》文章，从三个维度解读中国五年规划的世界意义。</p>
+                
+                <p><strong>1. 目光长远——"让高质量发展道路越走越宽"</strong></p>
+                <p>• <strong>生动注脚</strong>：上海洋山深水港四期自动化码头，"十三五"开港试生产，"十四五"吞吐能力阶梯式增长，"十五五"开局之年继续保持高效运转。</p>
+                <p>• <strong>发展成就</strong>："十四五"以来，中国经济总量连续跨越 110 万亿、120 万亿、130 万亿、140 万亿元，构建全球最大、发展最快的可再生能源体系，建成全球规模最大的教育体系、社会保障体系、医疗卫生体系。</p>
+                <p>• <strong>国际评价</strong>：古巴专家爱德华多·雷加拉多评价，习近平主席"亲自领导五年规划编制工作，以战略视野制定中国发展框架"。</p>
+                <p>• <strong>战略传承</strong>：从河北正定十年发展规划，到厦门 15 年战略规划，到福州 3 年、8 年、20 年发展规划，到浙江"八八战略"，习近平主席"谋在长远"的气魄格局一以贯之。</p>
+
+                <p style="margin-top:15px;"><strong>2. 宽广胸襟——"以自身发展带动各国共同繁荣"</strong></p>
+                <p>• <strong>开放历程</strong>：从"十三五"健全合作共赢体制机制，到"十四五"坚持更大范围、更宽领域、更深层次对外开放，到"十五五"明确"坚持开放合作、互利共赢是中国式现代化的必然要求"。</p>
+                <p>• <strong>全球贡献</strong>：新能源汽车领跑全球，人工智能加速应用，机器人产业规模落地，中国科技创新从"跟跑"迈向"并跑""领跑"。</p>
+                <p>• <strong>国际反响</strong>：埃及埃中商会秘书长迪亚·赫尔米表示，"中国以真诚的意愿、务实的举措、共赢的追求，彰显负责任大国的领导力与担当"。</p>
+                <p>• <strong>世界期待</strong>：匈牙利工人党主席蒂尔默说："一个规划清晰、目标明确且持续开放的中国，是中国之幸，更是世界之福。"</p>
+
+                <p style="margin-top:15px;"><strong>3. 治理之道——"民族复兴与人类进步同向共进"</strong></p>
+                <p>• <strong>制度优势</strong>：科学制定和接续实施五年规划，是我们党治国理政一条重要经验，也是中国特色社会主义一个重要政治优势。</p>
+                <p>• <strong>国际评价</strong>：巴西《论坛》杂志专栏作家娅拉·维达尔认为，中国五年规划体现的国家治理哲学蕴含深刻历史思维，超越西方政治的短期功利逻辑。</p>
+                <p>• <strong>治理智慧</strong>：法国巴黎法中友好协会副主席利亚齐德·本哈米说："这是一种在长远规划与灵活实践中实现平衡的治理智慧。"</p>
+                <p>• <strong>人民至上</strong>：西班牙知华讲堂基金会执行主席玛尔塔·蒙托洛说，中国"发扬民主、集思广益的规划模式，归根结底是为了增进最广大人民的福祉"。</p>
+                <p>• <strong>大国担当</strong>：尼日利亚中国研究中心主任查尔斯·奥努纳伊朱说："中国对自身的大国地位有着清醒认识，这种认识并非源于权力，而是责任。"</p>
+            </div>
+
+            <div class="card" style="border-left-color: #3498db;">
+                <h3>三、核心金句与写作素材</h3>
+                <p>• <strong>经济大省担当</strong>："能力越大，责任就越大"——经济大省在全国发展大局中打头阵、勇争先、走在前、作示范。</p>
+                
+                <p style="margin-top:15px;">• <strong>科技创新路径</strong>："让创新链和产业链无缝对接"——实验室里的"创新种子"在产业沃土中生根结果。</p>
+                
+                <!-- 科技创新路径下的子级板块：要点 + 素材 -->
+                 <div style="margin-left:20px; margin-top:10px; padding:15px; background:#f8f9fa; border-radius:8px; border-left:3px solid #9b59b6;">
+                     <p style="font-weight:bold; color:#9b59b6; margin-bottom:12px; font-size:0.95rem;">📌 拓展阅读：向"新"与向"兴"</p>
+                     
+                     <p style="margin-bottom:10px;"><strong>【要点：新与兴的辩证关系归纳】</strong></p>
+                     <p style="margin-bottom:8px;">• <strong>向"新"是路径，向"兴"是落点</strong>：向"新"是志气，向"兴"是地气；向"新"贵在突破，向"兴"重在扎根。</p>
+                     <p style="margin-bottom:8px;">• <strong>关键在落地，重点是衔接</strong>：从技术到应用、由"新"及"兴"，只有将创新力转化成生产力，才能打通未来。</p>
+                     <p style="margin-bottom:12px;">• <strong>技术领先≠应用领先</strong>：模型参数再优，若不能沉入产线、融入实践、回应需求，终是空中楼阁。</p>
+                     
+                     <p style="margin-bottom:10px;"><strong>【理解：辩证关系的具体阐释】</strong></p>
+                     <p style="margin-bottom:8px;">• <strong>新兴产业的特征</strong>：绝非单点技术的孤勇突围，而是创新链、产业链、需求链的三重咬合。</p>
+                     <p style="margin-bottom:8px;">• <strong>新技术的定位</strong>：不是孤芳自赏的"塔尖"迷恋，而是要下"书架"、上"货架"。</p>
+                     <p style="margin-bottom:12px;">• <strong>人机共生</strong>：新技术赋予人以新能力，人也能赋予技术和产业以新空间，这是双向奔赴。</p>
+                     
+                     <p style="margin-bottom:10px;"><strong>【案例：以实践证明新与兴的关系】</strong></p>
+                     <p style="margin-bottom:8px;">• <strong>氢能案例·江苏张家港</strong>：中国拥有全球超过一半已承诺绿氢产能，氢能公交车行驶在大街小巷，"氢光互补"智能微电网成为新型"充电宝"。实现技术有突破、产业有支撑、需求有回应的良性循环。</p>
+                     <p style="margin-bottom:8px;">• <strong>粮库案例·福建南安</strong>：智能探杆插入粮堆即可自动采集温度、湿度、虫情等数据，手机上就能及时掌握。把经验变为数据，让算法听懂需求，从新场景中生长。</p>
+                     <p>• <strong>纺织案例·浙江柯桥</strong>：AI 模型依托 42.1 亿条产业数据，覆盖"找面料、找工厂、找技术"，8.9 万名工程师不断推动技术优化。把人的智慧"翻译"成系统语言，再把系统能力"转译"为产业支撑。</p>
+                 </div>
+
+                <!-- 要点二：突出"新"字诀 -->
+                 <div style="margin-left:20px; margin-top:15px; padding:15px; background:#f0f8ff; border-radius:8px; border-left:3px solid #e74c3c;">
+                     <p style="font-weight:bold; color:#e74c3c; margin-bottom:12px; font-size:0.95rem;">🔑 要点二：突出"新"字诀</p>
+                     
+                     <p style="margin-bottom:10px;"><strong>【"新"的三个方面】</strong></p>
+                     <p style="margin-bottom:8px;">• <strong>新技术</strong>：从一句话、一张图生成电影级短片的中国 AI 大模型，换电机器人、自动驾驶送货卡车、无人机送餐等，被美国记者评价为"既充满未来感又有些不可思议"。</p>
+                     <p style="margin-bottom:8px;">• <strong>新产业</strong>：传统产业蝶变（钢铁、纺织、机械向高端化、智能化、绿色化迈进）；新兴产业壮大（生物技术、新能源等新赛道崛起）；未来产业加速（类脑智能、量子信息、未来网络等前沿领域前瞻布局）。</p>
+                     <p style="margin-bottom:12px;">• <strong>新业态</strong>：以"三新"经济为核心，技术、数据、人才等各类先进生产要素向发展新质生产力集聚，中国经济在质量之变、效率之变、动力之变中不断迈向新境界。</p>
+                     
+                     <p style="margin-bottom:10px; margin-top:15px;"><strong>【"新"的两个要求】</strong></p>
+                     <p style="margin-bottom:8px;">• <strong>坚持创新引领</strong>：科技创新和产业创新是发展新质生产力的基本路径。科技创新这个"关键变量"正转化为高质量发展的"最大增量"。</p>
+                     <p style="margin-bottom:12px;">• <strong>必然要求因地制宜</strong>：不能一哄而上、泡沫化，也不能简单认为是经济发达地区的事，而要根据本地的资源禀赋、产业基础、科研条件等，有选择地推动新产业、新模式、新动能发展。</p>
+                     
+                     <p style="margin-bottom:10px; margin-top:15px;"><strong>【典型案例：长三角造机器人】</strong></p>
+                     <p style="margin-bottom:8px;">一台工业机器人，"全长三角造"——上海嘉定机器人超级工厂总部负责整机设计与总装，浙江衢州提供精密伺服电机，江苏苏州提供谐波减速机，安徽宣城提供外壳与结构件。这体现了因地制宜、优化生产力布局的发展思路。</p>
+                     
+                     <p style="margin-top:12px; font-weight:bold; color:#2c3e50;">🎯 面向"十五五"：向"新"而行，凝"新"聚力，中国必将"新"潮澎湃，"新新"向荣！</p>
+                 </div>
+
+                <!-- 要点三：AI 时代存在的问题及解决措施 -->
+                 <div style="margin-left:20px; margin-top:15px; padding:15px; background:#fff5e6; border-radius:8px; border-left:3px solid #f39c12;">
+                     <p style="font-weight:bold; color:#f39c12; margin-bottom:12px; font-size:0.95rem;">🔑 要点三：AI 时代存在的问题及解决措施</p>
+                     
+                     <p style="margin-bottom:10px;"><strong>【问题一：应用层繁荣下的隐忧】</strong></p>
+                     <p style="margin-bottom:8px;">• <strong>流量难以为继</strong>：AI 应用下载快、卸载也快，30 天留存率平均仅约 12.8%，"撒钱"换来的流量难以持续。</p>
+                     <p style="margin-bottom:8px;">• <strong>基础设施待完善</strong>：春节前夕个别 AI 平台系统崩溃，表面是算力不足的偶发事件，实质反映 AI 基础设施仍有待完善。</p>
+                     <p style="margin-bottom:8px;">• <strong>基础理论短板</strong>：我国人工智能在基础理论、关键核心技术等方面还存在短板弱项，高端芯片、基础软件等核心技术亟待攻克。</p>
+                     
+                     <p style="margin-bottom:10px; margin-top:15px;"><strong>【问题二：未成年人保护缺失】</strong></p>
+                     <p style="margin-bottom:8px;">• <strong>内容安全隐患</strong>：部分 AI 聊天应用打着"情感陪伴""角色扮演"旗号，用脏话、阴暗人设制造刺激，将暴力、色情包装成卖点，精准投喂未成年人。</p>
+                     <p style="margin-bottom:8px;">• <strong>算法被动应答</strong>：当前 AI 大多被动应答，孩子说"我想死"只问"为什么"，缺乏情绪识别和主动干预能力。</p>
+                     <p style="margin-bottom:8px;">• <strong>技术防线虚设</strong>：未成年人模式成"摆设"，实名认证形同虚设、卸载重装即可绕过、打赏支付无风险提示。</p>
+                     
+                     <p style="margin-bottom:10px; margin-top:15px;"><strong>【问题三：治理体系不健全】</strong></p>
+                     <p style="margin-bottom:8px;">• <strong>信任机制缺失</strong>：透明度不足、责任边界模糊、权限控制失衡，如某视频生成模型仅凭一张面部图像就能模仿本人声音，引发隐私和侵权争议。</p>
+                     <p style="margin-bottom:8px;">• <strong>伦理审查缺位</strong>：某装备制造企业因 AI 排产模型未进行公平性测试，导致中小供应商订单被系统性压缩，引发供应链信任危机。</p>
+                     <p style="margin-bottom:8px;">• <strong>监管滞后于发展</strong>：AI 技术迭代演进速度前所未有，监管体系需要大步跟上。</p>
+                     
+                     <p style="margin-bottom:10px; margin-top:15px;"><strong>【解决措施：三位一体协同治理】</strong></p>
+                     
+                     <div style="background:#e8f6f3; padding:12px; border-radius:6px; margin-bottom:10px;">
+                         <p style="margin-bottom:8px;"><strong>① 技术层面：夯实底座 + 算法升级</strong></p>
+                         <p style="margin-bottom:6px;">• <strong>攻克核心技术</strong>：集中力量攻克高端芯片、基础软件等核心技术，打通从基础研究到场景落地的完整链条。</p>
+                         <p style="margin-bottom:6px;">• <strong>强化基础支撑</strong>：在模型基础能力、数据供给创新、智能算力统筹等方面强化基础支撑能力。</p>
+                         <p style="margin-bottom:6px;">• <strong>算法主动干预</strong>：让 AI 能识别异常情绪、识别诱导性提问，在危险边缘主动拦截："这个话题我不太懂，要不要和爸爸妈妈聊聊？"</p>
+                         <p>• <strong>以应用锤炼技术</strong>：发挥超大规模市场优势，以应用驱动创新，以场景优化生态。</p>
+                     </div>
+                     
+                     <div style="background:#fef9e7; padding:12px; border-radius:6px; margin-bottom:10px;">
+                         <p style="margin-bottom:8px;"><strong>② 主体层面：企业主责 + 行业自律</strong></p>
+                         <p style="margin-bottom:6px;">• <strong>平台主责</strong>：为孩子安全用 AI 堵上后门、过滤内容、不让算法作恶，这是开发者、算法、平台共同的责任。</p>
+                         <p style="margin-bottom:6px;">• <strong>数据保护</strong>：形成"数据不能被随意拉取，隐私不能被随意窥探"的行规和共识，主动构建安全架构、强化数据保护、提升透明度。</p>
+                         <p>• <strong>合规即竞争力</strong>：合规应成为赢得市场信任的"通行证"，那些名为"创新"实为绕过所有规则的"黑灰产"最终会被时代抛弃。</p>
+                     </div>
+                     
+                     <div style="background:#f0f8ff; padding:12px; border-radius:6px;">
+                         <p style="margin-bottom:8px;"><strong>③ 治理层面：政府统筹 + 社会共治</strong></p>
+                         <p style="margin-bottom:6px;">• <strong>政府统筹</strong>：完善法律法规与伦理准则，为 AI 发展划定清晰边界。"十五五"规划建议提出"加强人工智能治理，完善相关法律法规、政策制度、应用规范、伦理准则"。</p>
+                         <p style="margin-bottom:6px;">• <strong>社会共治</strong>：媒体加强科普引导，科研机构与伦理专家前瞻研判风险，用户提升数字安全素养，形成强大的社会监督力量。</p>
+                         <p>• <strong>监管与时俱进</strong>：织密"分级 + 共治"的监管网，打通网信、教育、妇联等多部门数据壁垒，形成"发现—预警—干预"的闭环。</p>
+                     </div>
+                     
+                     <p style="margin-top:12px; font-weight:bold; color:#2c3e50; background:#e8f6f3; padding:10px; border-radius:5px;">💡 治理理念：人工智能时代的治理逻辑，从来不是限制创新，而是为创新保驾护航；协同治理的目标，也不是在风险边缘试探，而是让技术在可控轨道上加速前行。</p>
+                 </div>
+                
+                <p style="margin-top:15px;">• <strong>实体经济根基</strong>："实体经济是大国的根基"——推进产业智能化、绿色化、融合化。</p>
+                <p>• <strong>文化赋能发展</strong>："以文化赋能经济社会发展"——发展的文化成色更足、动能更强。</p>
+                <p>• <strong>教育强国之基</strong>："教育是强国建设、民族复兴之基"——人才辈出、人尽其才、才尽其用。</p>
+                <p>• <strong>长远战略眼光</strong>："对时间的理解，是以百年、千年为计"——中国领导人立足文明发展视角擘画国家发展规划。</p>
+                <p>• <strong>开放合作理念</strong>："世界各国乘坐在一条命运与共的大船上"——中国以自身发展带动各国共同繁荣。</p>
+                <p>• <strong>治理智慧</strong>："科学制定和接续实施五年规划，是我们党治国理政一条重要经验"——在长远规划与灵活实践中实现平衡。</p>
+            </div>
+        </div>
+
+        <!-- 话题六：树立正确的政绩观 -->
+        <div id="topic6" class="section-content">
+            <h2>话题六：树立正确的政绩观 <span class="topic-tag orange">党性修养</span></h2>
+            
+            <div class="card" style="border-left-color: #e67e22;">
+                <h3>引言：初心之问</h3>
+                <p style="font-size:0.95rem; color:#555; margin-bottom:20px;">"政绩为谁而树、树什么样的政绩、靠什么树政绩"，这是每一名领导干部必须回答好的初心之问、使命之问、时代之问、实践之问。</p>
+                
+                <!-- 要点一：四个不 -->
+                <div style="margin-bottom:25px;">
+                    <h4 style="color:#2980b9; margin-bottom:15px; font-size:1.05rem;">🔑 要点一：树立正确政绩观的"四个不"</h4>
+                    
+                    <div style="background:#f8f9fa; padding:15px; border-radius:8px; margin-bottom:15px;">
+                        <p style="font-weight:bold; color:#2c3e50; margin-bottom:10px;">① 不翻烧饼，贵在一张蓝图绘到底</p>
+                        <p style="margin-bottom:8px;">• <strong>问题表现</strong>：换一届领导就来一个"兜底翻"，看似锐意进取，实则折腾反复，贻误发展良机。</p>
+                        <p style="margin-bottom:8px;">• <strong>正确做法</strong>：心怀"功成不必在我、功成必定有我"的境界，尊重发展规律，保持战略定力，对科学的、实事求是的、符合群众意愿的决策部署，一茬接着一茬干，一锤接着一锤敲。</p>
+                        <p>• <strong>核心理念</strong>：事业发展是场接力赛，既跑好自己这一棒，也递好下一棒。让蓝图从纸上落到地上，让梦想从心中变成现实。</p>
+                    </div>
+                    
+                    <div style="background:#e8f6f3; padding:15px; border-radius:8px; margin-bottom:15px;">
+                        <p style="font-weight:bold; color:#2c3e50; margin-bottom:10px;">② 不搞花架子，重在脚踏实地办实事</p>
+                        <p style="margin-bottom:8px;">• <strong>问题表现</strong>：费尽心思造景、绞尽脑汁作秀，搞"形象工程""政绩工程"。</p>
+                        <p style="margin-bottom:8px;">• <strong>正确做法</strong>：把精力用在察实情、出实招、求实效上。"牡丹花好空入目，枣花虽小结实成"，与其造景不如造福，与其作秀不如做事。</p>
+                        <p>• <strong>核心理念</strong>：政绩是干出来的，不是喊出来的，更不是秀出来的。从解决群众急难愁盼的具体问题，到做好打基础、利长远的潜绩工作，干一件成一件，积小胜为大胜，用实干赢得群众口碑。</p>
+                    </div>
+                    
+                    <div style="background:#fef9e7; padding:15px; border-radius:8px; margin-bottom:15px;">
+                        <p style="font-weight:bold; color:#2c3e50; margin-bottom:10px;">③ 不打小算盘，要胸怀大局算大账</p>
+                        <p style="margin-bottom:8px;">• <strong>问题表现</strong>：在个人得失上盘算，在部门利益上打转转，搞本位主义、保护主义。</p>
+                        <p style="margin-bottom:8px;">• <strong>正确做法</strong>：自觉把本职工作置于全局中来定位，既为一域争光，更为全局添彩。心里装着大账，不在个人得失上盘算，不在部门利益上打转转。</p>
+                        <p>• <strong>核心理念</strong>：领导干部手中的权力是用来为国干事、为民谋利的。摒弃"小九九"心态，在全局利益面前勇担当，在个人得失面前不计较，一心一意谋发展。</p>
+                    </div>
+                    
+                    <div style="background:#f0f8ff; padding:15px; border-radius:8px;">
+                        <p style="font-weight:bold; color:#2c3e50; margin-bottom:10px;">④ 不搞小聪明，成在迎难而上敢担当</p>
+                        <p style="margin-bottom:8px;">• <strong>问题表现</strong>：遇到矛盾绕道走，碰到困难往上交，推脱躲绕、不思进取。</p>
+                        <p style="margin-bottom:8px;">• <strong>正确做法</strong>：主动到情况复杂、矛盾集中的地方去，挑最重的担子，啃最硬的骨头。直面矛盾、攻坚克难，迎难而上、挺身而出。</p>
+                        <p>• <strong>核心理念</strong>：发展中的硬骨头、改革中的深水区、群众反映强烈的真问题，躲不过、绕不开。唯有迎难而上，才能打开新局面、闯出新天地。这才是真聪明、大智慧。</p>
+                    </div>
+                </div>
+
+                <!-- 要点二：常破心中贼 -->
+                <div style="margin-bottom:25px;">
+                    <h4 style="color:#2980b9; margin-bottom:15px; font-size:1.05rem;">🔑 要点二：树牢正确政绩观须常破"心中贼"</h4>
+                    
+                    <div style="background:#fff5e6; padding:15px; border-radius:8px; margin-bottom:15px;">
+                        <p style="font-weight:bold; color:#2c3e50; margin-bottom:10px;">【什么是"心中贼"】</p>
+                        <p style="margin-bottom:8px;">• <strong>定义</strong>："心中贼"是主观意识中的"内忧"，无影无踪，有极强的隐蔽性，又五花八门，有极大的腐蚀性。</p>
+                        <p style="margin-bottom:8px;">• <strong>三种表现</strong>：</p>
+                        <p style="margin-left:20px; margin-bottom:6px;">- 心为物役、以权谋私的"贪婪贼"</p>
+                        <p style="margin-left:20px; margin-bottom:6px;">- 喜欢作秀、热衷造势的"浮夸贼"</p>
+                        <p style="margin-left:20px;">- 不思进取、推脱躲绕的"懒政贼"</p>
+                        <p style="margin-top:8px;">• <strong>危害</strong>：党员干部若心中有"贼"，则会政绩观错位，搞"形象工程"和"政绩工程"，将特权思想歪曲为"应有待遇"……初心被"偷"、公心被"盗"，终致行为妄动、底线失守。</p>
+                    </div>
+                    
+                    <div style="background:#e8f6f3; padding:15px; border-radius:8px; margin-bottom:15px;">
+                        <p style="font-weight:bold; color:#2c3e50; margin-bottom:10px;">【如何破"心中贼"】</p>
+                        <p style="margin-bottom:8px;">• <strong>破贼之道，首在勇气</strong>：敢于刀刃向内、揭短亮丑、刮骨疗毒，才能正心明道、去腐生肌。本着彻底的唯物主义精神深入查摆问题，时时把"探照灯"对准自己、经常用"显微镜"检视自身。</p>
+                        <p style="margin-bottom:8px;">• <strong>贵在持之以恒</strong>："常破"二字绵绵用力。逆水行舟，一篙不可放缓；滴水穿石，一滴不可弃滞。加强党性修养是纠正政绩观偏差的治本之道，必须以永远在路上的坚韧和执着，持之以恒将自我革命精神贯彻到底。</p>
+                        <p>• <strong>常破更要常立</strong>：持续修炼共产党人的"心学"，始终用习近平新时代中国特色社会主义思想凝心铸魂，坚持学思用贯通、知信行统一。不能坐而论道，必须积极主动在事上磨、在干中练。</p>
+                    </div>
+                    
+                    <div style="background:#f8f9fa; padding:15px; border-radius:8px;">
+                        <p style="font-weight:bold; color:#2c3e50; margin-bottom:10px;">【先进典型】</p>
+                        <p style="margin-bottom:8px;">• <strong>徐淙祥</strong>：让许多"望天田"变成"高产田"，扎根农业一线，用科技赋能粮食生产。</p>
+                        <p style="margin-bottom:8px;">• <strong>廖俊波</strong>："能在现场就不在会场"，用脚步丈量民情，用实干诠释担当。</p>
+                        <p>• <strong>杨善洲</strong>："只要生命不结束，服务人民不停止"，退休后仍坚持植树造林，将价值 3 亿元的林场无偿交给国家。</p>
+                    </div>
+                </div>
+
+                <!-- 要点三：检验标准 -->
+                <div style="margin-bottom:25px;">
+                    <h4 style="color:#2980b9; margin-bottom:15px; font-size:1.05rem;">🔑 要点三：政绩观的检验标准</h4>
+                    
+                    <div style="background:#fef9e7; padding:15px; border-radius:8px;">
+                        <p style="margin-bottom:10px;"><strong>根本标准</strong>："四个不"说到底，检验的是从实际出发的自觉、按规律办事的能力、对人民群众的感情，同时也是判断可为与不可为的标准。</p>
+                        <p style="margin-bottom:10px;"><strong>最终评判</strong>：可为不可为，最终要看<strong>群众满意不满意、高兴不高兴、答应不答应</strong>。</p>
+                        <p style="margin-bottom:10px;"><strong>实践要求</strong>：</p>
+                        <p style="margin-bottom:8px;">• 群众的一桩桩小事连着国家大事，把群众的事当成自家的事来办。</p>
+                        <p style="margin-bottom:8px;">• 把群众的难当成自家的难来解，多做打基础的事、利长远的事、惠民生的事。</p>
+                        <p>• 这样的政绩才经得起历史的检验。</p>
+                    </div>
+                </div>
+
+                <!-- 金句总结 -->
+                <p style="margin-top:25px; font-weight:bold; color:#2c3e50; background:#fff5e6; padding:15px; border-radius:8px; text-align:center;">
+                    🎯 习近平总书记指出："树立和践行正确政绩观，起决定性作用的是党性。"党员干部要勤掸"思想尘"，多思"贪欲害"，常破"心中贼"，以内无妄思保证外无妄动，真正做到"心不动于微利之诱，目不眩于五色之惑"，不断创造无愧于历史、无愧于时代、无愧于人民的新业绩。
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    function showSection(id, linkElement) {
+        document.querySelectorAll('.section-content').forEach(el => el.classList.remove('active'));
+        document.getElementById(id).classList.add('active');
+        
+        document.querySelectorAll('.nav-link').forEach(el => el.classList.remove('active'));
+        if (linkElement) {
+            linkElement.classList.add('active');
+        }
+        
+        document.querySelector('.main-content').scrollTop = 0;
+    }
+</script>
+
+</body>
+</html>
