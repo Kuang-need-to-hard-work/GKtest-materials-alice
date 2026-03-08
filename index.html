@@ -10,8 +10,9 @@
         .sidebar { width: 300px; background: #fff; padding: 20px; box-shadow: 2px 0 10px rgba(0,0,0,0.1); overflow-y: auto; z-index: 10; }
         .main-content { flex: 1; position: relative; }
         h2 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; font-size: 1.2rem; }
-        .nav-link { display: block; padding: 10px; margin: 5px 0; background: #eef2f7; color: #2980b9; text-decoration: none; border-radius: 5px; transition: all 0.3s; font-weight: bold; cursor: pointer; }
+        .nav-link { display: block; padding: 12px; margin: 5px 0; background: #eef2f7; color: #2980b9; text-decoration: none; border-radius: 5px; transition: all 0.3s; font-weight: bold; cursor: pointer; -webkit-tap-highlight-color: transparent; }
         .nav-link:hover { background: #3498db; color: white; transform: translateX(5px); }
+        .nav-link:active { background: #2980b9; }
         .nav-link.active { background: #3498db; color: white; }
         .section-content { display: none; padding: 20px; animation: fadeIn 0.5s; }
         .section-content.active { display: block; }
@@ -28,7 +29,15 @@
         .home-banner { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; border-radius: 10px; margin-bottom: 20px; text-align: center; }
         .home-banner h2 { color: white; border-bottom: none; font-size: 1.8rem; margin-bottom: 10px; }
         .home-banner p { font-size: 1rem; opacity: 0.9; }
-        @media (max-width: 768px) { .container { flex-direction: column; } .sidebar { width: 100%; height: auto; box-sizing: border-box; } .main-content { height: 60vh; } }
+        @media (max-width: 768px) { 
+            .container { flex-direction: column; } 
+            .sidebar { width: 100%; height: auto; box-sizing: border-box; } 
+            .main-content { height: auto; min-height: 100vh; }
+            h2 { font-size: 1.1rem; }
+            .card { padding: 12px; }
+            .home-banner { padding: 20px; }
+            .home-banner h2 { font-size: 1.4rem; }
+        }
     </style>
 </head>
 <body>
@@ -764,6 +773,14 @@
     </div>
 </div>
 
+<!-- 版权说明 -->
+<footer style="text-align: center; padding: 20px; color: #666; font-size: 12px; border-top: 1px solid #eee; margin-top: 30px; background: #f9f9f9;">
+    <p>© 2026 [Alice-Go苟生活-kuangjunqing]. All Rights Reserved.</p>
+    <p>本页面内容仅供学习参考，未经许可禁止用于商业用途。</p>
+    <p>数据来源：人民日报、新华社、求是网、人民网等公开媒体 | 整理更新：2026 年 3 月</p>
+    <p style="margin-top: 8px; font-size: 11px; color: #999;">免责声明：本页面所有内容均整理自官方媒体公开报道，版权归原作者所有。如有异议，请联系删除。</p>
+</footer>
+
 <script>
     function showSection(id, linkElement) {
         document.querySelectorAll('.section-content').forEach(el => el.classList.remove('active'));
@@ -774,7 +791,10 @@
             linkElement.classList.add('active');
         }
         
-        document.querySelector('.main-content').scrollTop = 0;
+        // 优化移动端滚动
+        setTimeout(function() {
+            window.scrollTo(0, 0);
+        }, 100);
     }
 </script>
 
