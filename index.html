@@ -7,8 +7,67 @@
     <style>
         body { margin: 0; font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background: #f4f6f9; }
         .container { display: flex; height: 100vh; }
-        .sidebar { width: 300px; background: #fff; padding: 20px; box-shadow: 2px 0 10px rgba(0,0,0,0.1); overflow-y: auto; z-index: 10; }
-        .main-content { flex: 1; position: relative; }
+        
+        /* 移动端导航优化 */
+        .mobile-nav-toggle {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 50px;
+            background: #2c3e50;
+            z-index: 1000;
+            padding: 0 15px;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .mobile-nav-toggle h2 {
+            color: white;
+            font-size: 1rem;
+            margin: 0;
+            border: none;
+            padding: 0;
+        }
+        .nav-toggle-btn {
+            background: #3498db;
+            border: none;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        .sidebar { 
+            width: 300px; 
+            background: #fff; 
+            padding: 20px; 
+            box-shadow: 2px 0 10px rgba(0,0,0,0.1); 
+            overflow-y: auto; 
+            z-index: 10; 
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            transition: transform 0.3s ease;
+        }
+        .sidebar.hidden {
+            transform: translateX(-100%);
+        }
+        .sidebar-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.5);
+            z-index: 9;
+        }
+        .sidebar-overlay.active {
+            display: block;
+        }
+        .main-content { flex: 1; margin-left: 300px; position: relative; transition: margin-left 0.3s ease; }
         h2 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; font-size: 1.2rem; }
         .nav-link { display: block; padding: 12px; margin: 5px 0; background: #eef2f7; color: #2980b9; text-decoration: none; border-radius: 5px; transition: all 0.3s; font-weight: bold; cursor: pointer; -webkit-tap-highlight-color: transparent; }
         .nav-link:hover { background: #3498db; color: white; transform: translateX(5px); }
@@ -30,9 +89,27 @@
         .home-banner h2 { color: white; border-bottom: none; font-size: 1.8rem; margin-bottom: 10px; }
         .home-banner p { font-size: 1rem; opacity: 0.9; }
         @media (max-width: 768px) { 
-            .container { flex-direction: column; } 
-            .sidebar { width: 100%; height: auto; box-sizing: border-box; } 
-            .main-content { height: auto; min-height: 100vh; }
+            .container { flex-direction: column; }
+            
+            /* 移动端顶部导航栏 */
+            .mobile-nav-toggle {
+                display: flex;
+            }
+            
+            /* 侧边栏隐藏 */
+            .sidebar {
+                transform: translateX(-100%);
+            }
+            .sidebar.show {
+                transform: translateX(0);
+            }
+            
+            .main-content { 
+                height: auto; 
+                min-height: 100vh;
+                margin-left: 0;
+                padding-top: 50px;
+            }
             h2 { font-size: 1.1rem; }
             .card { padding: 12px; }
             .home-banner { padding: 20px; }
@@ -43,6 +120,15 @@
 <body>
 
 <div class="container">
+    <!-- 移动端顶部导航栏 -->
+    <div class="mobile-nav-toggle">
+        <h2>📑 大作文素材</h2>
+        <button class="nav-toggle-btn" onclick="toggleSidebar()">☰ 目录</button>
+    </div>
+    
+    <!-- 遮罩层 -->
+    <div class="sidebar-overlay" onclick="toggleSidebar()"></div>
+    
     <div class="sidebar">
         <h2>📑 目录导航</h2>
         <a class="nav-link active" onclick="showSection('home', this)">🏠 首页：十四五成就总结及2026政府工作报告摘要</a>
@@ -782,6 +868,14 @@
 </footer>
 
 <script>
+    // 切换侧边栏（移动端）
+    function toggleSidebar() {
+        const sidebar = document.querySelector('.sidebar');
+        const overlay = document.querySelector('.sidebar-overlay');
+        sidebar.classList.toggle('show');
+        overlay.classList.toggle('active');
+    }
+    
     function showSection(id, linkElement) {
         document.querySelectorAll('.section-content').forEach(el => el.classList.remove('active'));
         document.getElementById(id).classList.add('active');
@@ -789,6 +883,11 @@
         document.querySelectorAll('.nav-link').forEach(el => el.classList.remove('active'));
         if (linkElement) {
             linkElement.classList.add('active');
+        }
+        
+        // 移动端点击后自动关闭侧边栏
+        if (window.innerWidth <= 768) {
+            toggleSidebar();
         }
         
         // 优化移动端滚动
